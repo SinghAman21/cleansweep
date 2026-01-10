@@ -1,11 +1,11 @@
-# deepsweep Usage Guide
+# cull Usage Guide
 
 ## Installation
 
 ### Using npx (Recommended - No Installation Required)
 
 ```bash
-npx deepsweep --files "*.tmp" --dry-run
+npx cull --files "*.tmp" --dry-run
 ```
 
 ### Local Installation
@@ -20,44 +20,44 @@ npm start -- --files "*.tmp" --dry-run
 
 ```bash
 npm install -g .
-deepsweep --files "*.tmp" --dry-run
+cull --files "*.tmp" --dry-run
 ```
 
 ## Quick Examples
 
 ### Dry Run (Safe Testing)
 ```bash
-npx deepsweep --files "*.tmp" --dry-run
+npx cull --files "*.tmp" --dry-run
 ```
 
 ### Preview Before Deletion
 ```bash
-npx deepsweep --files "*.tmp" --preview
+npx cull --files "*.tmp" --preview
 ```
 
 ### Interactive Deletion
 ```bash
-npx deepsweep --files "*.log" --interactive
+npx cull --files "*.log" --interactive
 ```
 
 ### Delete with Logging
 ```bash
-npx deepsweep --files "*.tmp" --log cleanup.log
+npx cull --files "*.tmp" --log cleanup.log
 ```
 
 ### Multiple Patterns with Exclusions
 ```bash
-npx deepsweep --files "*.tmp" --folders "temp" --exclude "important" --exclude "backup" --dry-run
+npx cull --files "*.tmp" --folders "temp" --exclude "important" --exclude "backup" --dry-run
 ```
 
 ### Limited Depth Search
 ```bash
-npx deepsweep --folders "cache" --depth 2 --preview
+npx cull --folders "cache" --depth 2 --preview
 ```
 
 ### JSON Output Format
 ```bash
-npx deepsweep --files "*.tmp" --format json --dry-run
+npx cull --files "*.tmp" --format json --dry-run
 ```
 
 ## Development

@@ -1,5 +1,5 @@
 /**
- * Interactive prompt utilities for deepsweep
+ * Interactive prompt utilities for cull
  * Handles user confirmation prompts
  */
 

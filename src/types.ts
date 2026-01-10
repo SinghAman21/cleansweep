@@ -1,5 +1,5 @@
 /**
- * Type definitions for deepsweep
+ * Type definitions for cull
  */
 
 export type LogLevel = 'INFO' | 'WARNING' | 'ERROR';

@@ -1,5 +1,5 @@
 /**
- * Logger utility for deepsweep
+ * Logger utility for cull
  * Handles logging to console and log files with timestamps
  */
 

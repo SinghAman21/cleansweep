@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 /**
- * deepsweep CLI Entry Point
- * Command-line interface for the deepsweep deletion tool
+ * cull CLI Entry Point
+ * Command-line interface for the cull deletion tool
  */
 
 import { Command } from 'commander';
@@ -17,7 +17,7 @@ async function main() {
   const program = new Command();
 
   program
-    .name('deepsweep')
+    .name('cull')
     .description('A powerful command-line tool for safely deleting files and folders')
     .version('1.0.0')
     .option('-fi, --files <pattern>', 'Specify file patterns to delete (e.g., "*.tmp", "*.log")')
@@ -36,14 +36,14 @@ async function main() {
     .option('-fm, --format <format>', 'Output format: plain, json (default: plain)', 'plain')
     .addHelpText('after', `
 Examples:
-  npx deepsweep --files "*.tmp" --folders "temp" --exclude "important" --log deletion_log.txt --dry-run
-  npx deepsweep -fi "*.tmp" -fo "temp" -ex "important" -lg deletion_log.txt -dr
-  npx deepsweep --types "*.log" --depth 2 --interactive
-  npx deepsweep -ty "*.log" -d 2 -in
-  npx deepsweep --files "*.tmp" --preview
-  npx deepsweep -fi "*.tmp" -pr
-  npx deepsweep --folders "cache" --force --log cleanup.log
-  npx deepsweep -fo "cache" -f -lg cleanup.log
+  npx cull --files "*.tmp" --folders "temp" --exclude "important" --log deletion_log.txt --dry-run
+  npx cull -fi "*.tmp" -fo "temp" -ex "important" -lg deletion_log.txt -dr
+  npx cull --types "*.log" --depth 2 --interactive
+  npx cull -ty "*.log" -d 2 -in
+  npx cull --files "*.tmp" --preview
+  npx cull -fi "*.tmp" -pr
+  npx cull --folders "cache" --force --log cleanup.log
+  npx cull -fo "cache" -f -lg cleanup.log
     `);
 
   program.parse(process.argv);

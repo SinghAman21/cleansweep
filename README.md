@@ -1,4 +1,4 @@
-# deepsweep - Enhanced Delete Script
+# cull - Enhanced Delete Script
 
 A powerful and safe command-line tool for deleting files and folders with comprehensive safety features, logging, and flexible pattern matching.
 
@@ -19,7 +19,7 @@ A powerful and safe command-line tool for deleting files and folders with compre
 
 ## 🎯 Overview
 
-deepsweep is an enhanced bash script designed to safely and efficiently delete files and folders based on patterns, with multiple safety mechanisms to prevent accidental data loss. It provides features like dry-run mode, interactive confirmation, exclusion lists, depth control, and comprehensive logging.
+cull is an enhanced bash script designed to safely and efficiently delete files and folders based on patterns, with multiple safety mechanisms to prevent accidental data loss. It provides features like dry-run mode, interactive confirmation, exclusion lists, depth control, and comprehensive logging.
 
 ## ✨ Features
 
@@ -58,7 +58,7 @@ deepsweep is an enhanced bash script designed to safely and efficiently delete f
 1. Clone or download the script:
 ```bash
 git clone <repository-url>
-cd deepsweep
+cd cull
 ```
 
 2. Make the script executable:
@@ -68,7 +68,7 @@ chmod +x delete.sh
 
 3. (Optional) Add to your PATH for global access:
 ```bash
-sudo ln -s $(pwd)/delete.sh /usr/local/bin/deepsweep
+sudo ln -s $(pwd)/delete.sh /usr/local/bin/cull
 ```
 
 ## 🚀 Usage

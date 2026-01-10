@@ -1,5 +1,5 @@
 /**
- * Deletion Engine for deepsweep
+ * Deletion Engine for cull
  * Core logic for collecting and processing deletions
  */
 

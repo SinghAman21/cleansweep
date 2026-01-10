@@ -1,5 +1,5 @@
 /**
- * File utility functions for deepsweep
+ * File utility functions for cull
  * Handles file system operations and pattern matching
  */
 
